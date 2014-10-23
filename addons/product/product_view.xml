@@ -473,6 +473,7 @@
                 <search string="Product Categories">
                     <field name="name" string="Product Categories"/>
                     <field name="parent_id"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
                 </search>
             </field>
         </record>
@@ -490,8 +491,10 @@
                         </div>
                         <group>
                             <group name="parent" col="4">
+                                <field name="company_id" groups="base.group_multi_company" widget="selection"/>
+                                <newline/>
                                 <field name="parent_id"/>
-                                <field name="type"/>
+                                <field name="type"/>                                
                             </group>
                         </group>
                     </sheet>
@@ -505,6 +508,7 @@
             <field name="arch" type="xml">
                 <tree string="Product Categories">
                     <field name="complete_name"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
                 </tree>
             </field>
         </record>
@@ -515,6 +519,7 @@
             <field name="arch" type="xml">
                 <tree toolbar="True" string="Product Categories">
                     <field name="name"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
                 </tree>
             </field>
         </record>
