@@ -1297,8 +1297,8 @@ class stock_picking(osv.osv):
         if op.product_id and op.product_uom_id and op.product_uom_id.id != product.uom_id.id:
             if op.product_uom_id.factor > product.uom_id.factor: #If the pack operation's is a smaller unit
                 uom_id = op.product_uom_id.id
-                #HALF-UP rounding as only rounding errors will be because of propagation of error from default UoM
-                qty = uom_obj._compute_qty_obj(cr, uid, product.uom_id, remaining_qty, op.product_uom_id, rounding_method='HALF-UP')
+        #HALF-UP rounding as only rounding errors will be because of propagation of error from default UoM
+        qty = uom_obj._compute_qty_obj(cr, uid, product.uom_id, remaining_qty, op.product_uom_id, rounding_method='HALF-UP')
         picking = op.picking_id
         res = {
             'picking_id': picking.id,
@@ -1309,7 +1309,7 @@ class stock_picking(osv.osv):
             'product_uom_qty': qty,
             'name': _('Extra Move: ') + product.name,
             'state': 'draft',
-            }
+        }
         return res
 
     def _create_extra_moves(self, cr, uid, picking, context=None):

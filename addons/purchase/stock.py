@@ -168,7 +168,6 @@ class stock_picking(osv.osv):
                 })
         return inv_vals
 
-
 class stock_warehouse(osv.osv):
     _inherit = 'stock.warehouse'
     _columns = {
