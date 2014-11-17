@@ -1800,7 +1800,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_Clasa_4"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="ro_pcg_pay" model="account.account.template">
@@ -1854,7 +1853,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_40"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4091" model="account.account.template">
@@ -1881,7 +1879,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_Clasa_4"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_411" model="account.account.template">
@@ -1949,10 +1946,9 @@
     <record id="pcg_421" model="account.account.template">
         <field name="name">Personal - salarii datorate</field>
         <field name="code">421</field>
-        <field name="type">payable</field>
-        <field name="user_type" ref="account.data_account_type_payable"/>
+        <field name="type">other</field>
+        <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_42"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_423" model="account.account.template">
@@ -1961,7 +1957,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_42"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_424" model="account.account.template">
@@ -1971,16 +1966,14 @@
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="note">Se utilizeaza atunci cand exista baza legala pentru acordarea acestora</field>
         <field name="parent_id" ref="pcg_42"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_425" model="account.account.template">
         <field name="name">Avansuri acordate personalului</field>
         <field name="code">425</field>
-        <field name="type">receivable</field>
-        <field name="user_type" ref="account.data_account_type_receivable"/>
+        <field name="type">other</field>
+        <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_42"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_426" model="account.account.template">
@@ -1989,7 +1982,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_42"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_427" model="account.account.template">
@@ -1998,7 +1990,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_42"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_428" model="account.account.template">
@@ -2007,7 +1998,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_42"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4281" model="account.account.template">
@@ -2016,7 +2006,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_428"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4282" model="account.account.template">
@@ -2025,7 +2014,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_428"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_43" model="account.account.template">
@@ -2042,7 +2030,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_43"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4311" model="account.account.template">
@@ -2051,7 +2038,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_431"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4312" model="account.account.template">
@@ -2060,7 +2046,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_431"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4313" model="account.account.template">
@@ -2069,7 +2054,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_431"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4314" model="account.account.template">
@@ -2078,7 +2062,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_431"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4315" model="account.account.template">
@@ -2087,7 +2070,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_431"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4316" model="account.account.template">
@@ -2096,7 +2078,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_431"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
 
@@ -2106,7 +2087,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_43"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4371" model="account.account.template">
@@ -2115,7 +2095,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_437"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4372" model="account.account.template">
@@ -2124,7 +2103,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_437"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4373" model="account.account.template">
@@ -2133,7 +2111,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_437"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_438" model="account.account.template">
@@ -2142,7 +2119,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_43"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4381" model="account.account.template">
@@ -2151,7 +2127,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_438"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4382" model="account.account.template">
@@ -2160,7 +2135,6 @@
         <field name="type">receivable</field>
         <field name="user_type" ref="account.data_account_type_receivable"/>
         <field name="parent_id" ref="pcg_438"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_44" model="account.account.template">
@@ -2177,7 +2151,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_44"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4411" model="account.account.template">
@@ -2186,7 +2159,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_441"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4418" model="account.account.template">
@@ -2195,7 +2167,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_441"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_442" model="account.account.template">
@@ -2204,7 +2175,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_44"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4423" model="account.account.template">
@@ -2213,7 +2183,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_442"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4424" model="account.account.template">
@@ -2222,7 +2191,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_442"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4426" model="account.account.template">
@@ -2231,7 +2199,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_442"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4427" model="account.account.template">
@@ -2240,7 +2207,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_442"/>
-        <field name="reconcile" eval="True"/>
     </record>
     
     <record id="pcg_4428" model="account.account.template">
@@ -2257,7 +2223,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="parent_id" ref="pcg_4428"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_44282" model="account.account.template">
@@ -2266,7 +2231,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="parent_id" ref="pcg_4428"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_444" model="account.account.template">
@@ -2275,7 +2239,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_44"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_445" model="account.account.template">
@@ -2284,16 +2247,14 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_44"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4451" model="account.account.template">
         <field name="name">Subventii guvernamentale</field>
         <field name="code">4451</field>
-        <field name="type">receivable</field>
-        <field name="user_type" ref="account.data_account_type_receivable"/>
+        <field name="type">other</field>
+        <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="parent_id" ref="pcg_445"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4452" model="account.account.template">
@@ -2302,7 +2263,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="parent_id" ref="pcg_445"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4458" model="account.account.template">
@@ -2311,7 +2271,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="parent_id" ref="pcg_445"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_446" model="account.account.template">
@@ -2320,7 +2279,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_44"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_447" model="account.account.template">
@@ -2329,7 +2287,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_44"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_448" model="account.account.template">
@@ -2338,7 +2295,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_44"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4481" model="account.account.template">
@@ -2347,7 +2303,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_448"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4482" model="account.account.template">
@@ -2356,7 +2311,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_448"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_45" model="account.account.template">
@@ -2373,7 +2327,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_45"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4511" model="account.account.template">
@@ -2382,7 +2335,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_451"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4518" model="account.account.template">
@@ -2391,7 +2343,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_451"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_453" model="account.account.template">
@@ -2400,7 +2351,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_45"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4531" model="account.account.template">
@@ -2409,7 +2359,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_451"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4538" model="account.account.template">
@@ -2418,7 +2367,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_451"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_455" model="account.account.template">
@@ -2427,7 +2375,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_45"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4551" model="account.account.template">
@@ -2454,7 +2401,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_45"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_457" model="account.account.template">
@@ -2463,7 +2409,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_45"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_458" model="account.account.template">
@@ -2472,7 +2417,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_45"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4581" model="account.account.template">
@@ -2481,7 +2425,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="parent_id" ref="pcg_458"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_4582" model="account.account.template">
@@ -2490,7 +2433,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="parent_id" ref="pcg_458"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_46" model="account.account.template">
@@ -2533,7 +2475,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_47"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_472" model="account.account.template">
@@ -2542,7 +2483,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_47"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_473" model="account.account.template">
@@ -2551,7 +2491,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_47"/>
-        <field name="reconcile" eval="True"/>
     </record>
     
     <record id="pcg_475" model="account.account.template">
@@ -2568,7 +2507,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_475"/>
-        <field name="reconcile" eval="True"/>
     </record>
     
      <record id="pcg_4752" model="account.account.template">
@@ -2577,7 +2515,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_475"/>
-        <field name="reconcile" eval="True"/>
     </record>
     
      <record id="pcg_4753" model="account.account.template">
@@ -2586,7 +2523,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_475"/>
-        <field name="reconcile" eval="True"/>
     </record>
     
     <record id="pcg_4754" model="account.account.template">
@@ -2595,7 +2531,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_475"/>
-        <field name="reconcile" eval="True"/>
     </record>
     
      <record id="pcg_4758" model="account.account.template">
@@ -2604,7 +2539,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_475"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_48" model="account.account.template">
@@ -2621,7 +2555,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_48"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_482" model="account.account.template">
@@ -2630,7 +2563,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_48"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
 
@@ -2648,7 +2580,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_49"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_495" model="account.account.template">
@@ -2657,7 +2588,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_49"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_496" model="account.account.template">
@@ -2666,7 +2596,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_liability"/>
         <field name="parent_id" ref="pcg_49"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_Clasa_5" model="account.account.template">
@@ -3047,7 +2976,6 @@
         <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_view"/>
         <field name="parent_id" ref="pcg_Clasa_5"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_581" model="account.account.template">
@@ -3056,7 +2984,6 @@
         <field name="type">other</field>
         <field name="user_type" ref="account.data_account_type_cash"/>
         <field name="parent_id" ref="pcg_58"/>
-        <field name="reconcile" eval="True"/>
     </record>
 
     <record id="pcg_59" model="account.account.template">
