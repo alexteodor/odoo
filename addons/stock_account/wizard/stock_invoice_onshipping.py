@@ -61,7 +61,7 @@ class stock_invoice_onshipping(osv.osv_memory):
         'journal_type': fields.selection([('purchase_refund', 'Refund Purchase'), ('purchase', 'Create Supplier Invoice'), 
                                           ('sale_refund', 'Refund Sale'), ('sale', 'Create Customer Invoice')], 'Journal Type', readonly=True),
         'group': fields.boolean("Group by partner"),
-        'invoice_date': fields.date('Invoice Date'),
+        'invoice_date':   fields.date('Invoice Date'),
     }
     _defaults = {
         'journal_type': _get_journal_type,
