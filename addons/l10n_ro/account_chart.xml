@@ -3174,7 +3174,7 @@
         <field name="name">Reduceri comerciale primite</field>
         <field name="code">609</field>
         <field name="type">other</field>
-        <field name="user_type" ref="account.data_account_type_expense"/>
+        <field name="user_type" ref="account.data_account_type_income"/>
         <field name="parent_id" ref="pcg_60"/>
     </record>
     
@@ -3761,7 +3761,7 @@
         <field name="name">Reduceri comerciale acordate</field>
         <field name="code">709</field>
         <field name="type">other</field>
-        <field name="user_type" ref="account.data_account_type_income"/>
+        <field name="user_type" ref="account.data_account_type_expense"/>
         <field name="parent_id" ref="pcg_70"/>
     </record>
 
