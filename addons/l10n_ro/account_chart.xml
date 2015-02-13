@@ -672,7 +672,7 @@
     <record id="pcg_207" model="account.account.template">
         <field name="name">Fond comercial</field>
         <field name="code">207</field>
-        <field name="type">other</field>
+        <field name="type">view</field>
         <field name="user_type" ref="account.data_account_type_asset"/>
         <field name="parent_id" ref="pcg_20"/>
     </record>
