@@ -100,10 +100,12 @@ class Proxy(http.Controller):
         """
         if debug is None:
             resp += """(<a href="/hw_proxy/status?debug">debug version</a>)"""
-        devices = subprocess.check_output("lsusb").split('\n')
+        devices = subprocess.check_output("lsusb").decode("utf-8").split('\n')
         count   = 0
         resp += "<div class='devices'>\n"
         for device in devices:
+            if not device:
+                continue
             device_name = device[device.find('ID')+2:]
             device_id   = device_name.split()[0]
             if not (device_id in BANNED_DEVICES):
